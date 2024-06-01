@@ -1,0 +1,21 @@
+public class CodeWarsMath {
+    public static int nearestSq(final int n) {
+        // Calculate the square root of n
+        int sqrt = (int) Math.round(Math.sqrt(n));
+        
+        // Square the rounded value
+        int nearestSquare = sqrt * sqrt;
+        
+        // Return the nearest square number
+        return nearestSquare;
+    }
+    
+    public static void main(String[] args) {
+        // Test cases
+        System.out.println(nearestSq(111)); // Should return 121
+        System.out.println(nearestSq(144)); // Should return 144
+        System.out.println(nearestSq(81));  // Should return 81
+        System.out.println(nearestSq(15));  // Should return 16
+        System.out.println(nearestSq(1));   // Should return 1
+    }
+}
